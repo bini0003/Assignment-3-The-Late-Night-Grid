@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | The Late Night Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="color:#ff5f00; font-weight:bold;">THE LATE NIGHT GRID</div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html" style="color:#ff5f00;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Ping Us</h1>
+        
+        <!-- Feature 5: Accordion FAQ -->
+        <section style="max-width: 600px; margin: 0 auto 30px auto;">
+            <h2 style="font-size: 1.2rem; color:#cccccc;">System FAQ</h2>
+            
+            <button class="accordion-btn">Are you really open until 4 AM?</button>
+            <div class="panel"><p>Yes, 7 days a week. We close from 4 AM to 6 AM for system reboots (cleaning).</p></div>
+            
+            <button class="accordion-btn">Do you offer student discounts?</button>
+            <div class="panel"><p>Show your student ID for 10% off any caffeine source.</p></div>
+
+            <button class="accordion-btn">Is there free Wi-Fi?</button>
+            <div class="panel"><p>Gigabit fiber optic Wi-Fi is free for paying customers.</p></div>
+
+            <button class="accordion-btn">Can I reserve a table for group study?</button>
+            <div class="panel"><p>Yes, use the contact form below to book a table 24 hours in advance.</p></div>
+        </section>
+
+        <!-- Feature 2: Form Validation Setup -->
+        <section class="form-section">
+            <form id="contact-form" novalidate>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name">
+                <span class="error-msg" id="name-error"></span>
+
+                <label for="email">Student Email</label>
+                <input type="email" id="email" name="email">
+                <span class="error-msg" id="email-error"></span>
+
+                <label for="subject">Request Type</label>
+                <select id="subject" name="subject" style="margin-bottom:15px;">
+                    <option value="booking">Table Booking</option>
+                    <option value="feedback">Store Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Message Data (Min 10 characters)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                <span class="error-msg" id="message-error"></span>
+
+                <button type="submit">TRANSMIT REQUEST</button>
+                <p id="form-success"></p>
+            </form>
+        </section>
+    </main>
+
+    <button id="backToTop">↑</button>
+
+    <footer>
+        <p>&copy; 2026 The Late Night Grid</p>
+        <div id="weather-widget">Loading data...</div>
+    </footer>
+</body>
+</html>

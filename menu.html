@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | The Late Night Grid</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="color:#ff5f00; font-weight:bold;">THE LATE NIGHT GRID</div>
+            <button class="hamburger" aria-label="Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html" style="color:#ff5f00;">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Full Database</h1>
+        
+        <!-- Feature 6: Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-category="all">All Items</button>
+            <button class="filter-btn" data-category="hot">Hot Drinks</button>
+            <button class="filter-btn" data-category="cold">Cold Drinks</button>
+            <button class="filter-btn" data-category="food">Brain Food</button>
+        </div>
+
+        <!-- Feature 4: Empty Container for JS to fill -->
+        <div id="menu-container" class="grid-container">
+            <!-- JS inserts items here -->
+        </div>
+    </main>
+
+    <button id="backToTop">↑</button>
+
+    <footer>
+        <p>&copy; 2026 The Late Night Grid</p>
+        <div id="weather-widget">Loading data...</div>
+    </footer>
+</body>
+</html>
